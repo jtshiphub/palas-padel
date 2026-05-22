@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mejores Palas de Pádel 2026 | Análisis y Recomendaciones</title>
+  <meta name="description" content="Descubre las mejores palas de pádel de 2026. Análisis de palas de control, potencia y la mejor relación calidad-precio. Guía experta actualizada." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green: #2dd4bf;
+      --green-dark: #14b8a6;
+      --blue: #1a73e8;
+      --dark: #0c0c0c;
+      --dark2: #161616;
+      --dark3: #202020;
+      --card-bg: #1a1a1a;
+      --border: rgba(255,255,255,0.08);
+      --text: #f0f0f0;
+      --muted: #888888;
+      --amazon: #ff9900;
+      --amazon-dark: #e68900;
+      --gold: #ffd700;
+      --radius: 16px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--dark);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* ─── HEADER ─── */
+    header {
+      background: linear-gradient(135deg, #0c0c0c 0%, #161616 50%, #0c0c0c 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(12px);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      color: #fff;
+    }
+    .logo span { color: var(--green); }
+    nav { display: flex; gap: 8px; }
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 8px;
+      transition: all 0.2s;
+    }
+    nav a:hover { color: #fff; background: rgba(255,255,255,0.07); }
+
+    /* ─── HERO ─── */
+    .hero {
+      background: linear-gradient(135deg, #0c0c0c 0%, #111111 40%, #0c0c0c 100%);
+      padding: 80px 24px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -100px; left: 50%;
+      transform: translateX(-50%);
+      width: 600px; height: 400px;
+      background: radial-gradient(ellipse, rgba(45,212,191,0.10) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(45,212,191,0.10);
+      border: 1px solid rgba(45,212,191,0.3);
+      color: var(--green);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 900;
+      letter-spacing: -1.5px;
+      line-height: 1.1;
+      max-width: 800px;
+      margin: 0 auto 20px;
+    }
+    .hero h1 span { color: var(--green); }
+    .hero p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: 0 auto 36px;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .stat { text-align: center; }
+    .stat-num {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: var(--green);
+    }
+    .stat-label { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+
+    /* ─── SECTIONS ─── */
+    .section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+    .section-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .section-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+    .section-tag.orange { color: var(--amazon); }
+    .section-tag.blue { color: #60a5fa; }
+    .section-tag.purple { color: #c084fc; }
+    .section-title {
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    .section-subtitle { color: var(--muted); font-size: 0.9rem; margin-top: 6px; }
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ─── FEATURED CARD (TOP 1) ─── */
+    .featured-card {
+      background: linear-gradient(135deg, var(--card-bg) 0%, #222222 100%);
+      border: 1px solid rgba(45,212,191,0.3);
+      border-radius: var(--radius);
+      padding: 32px;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 32px;
+      align-items: center;
+      margin-bottom: 24px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .featured-card:hover { transform: translateY(-3px); box-shadow: 0 20px 60px rgba(0,0,0,0.4); }
+    .featured-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--green), #5eead4);
+    }
+    .rank-badge {
+      position: absolute;
+      top: 16px; left: 16px;
+      background: var(--green);
+      color: #000;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 6px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .rank-badge.silver { background: #94a3b8; }
+    .rank-badge.bronze { background: #cd7f32; }
+    .rank-badge.value { background: var(--amazon); }
+    .card-img-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255,255,255,0.04);
+      border-radius: 12px;
+      padding: 20px;
+      min-height: 160px;
+    }
+    .card-img-wrap img {
+      width: 100%;
+      max-width: 160px;
+      height: 160px;
+      object-fit: contain;
+      filter: drop-shadow(0 8px 24px rgba(0,0,0,0.4));
+    }
+    .card-body h3 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .card-brand {
+      font-size: 0.8rem;
+      color: var(--green);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .stars {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 12px;
+    }
+    .star { color: var(--gold); font-size: 0.9rem; }
+    .rating-num { font-size: 0.85rem; color: var(--muted); margin-left: 6px; }
+    .card-desc { color: var(--muted); font-size: 0.88rem; line-height: 1.6; margin-bottom: 16px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
+    .tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 100px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .tag.green { border-color: rgba(45,212,191,0.3); color: var(--green); background: rgba(45,212,191,0.07); }
+    .tag.blue { border-color: rgba(96,165,250,0.3); color: #60a5fa; background: rgba(96,165,250,0.07); }
+    .tag.orange { border-color: rgba(255,153,0,0.3); color: var(--amazon); background: rgba(255,153,0,0.07); }
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .price-wrap .price {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: #fff;
+    }
+    .price-wrap .price-note { font-size: 0.75rem; color: var(--muted); }
+    .btn-amazon {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--amazon);
+      color: #000;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 12px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .btn-amazon:hover { background: var(--amazon-dark); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(255,153,0,0.3); }
+    .btn-amazon svg { width: 18px; height: 18px; }
+
+    /* ─── GRID CARDS ─── */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,0.35); }
+    .card-img-header {
+      background: rgba(255,255,255,0.03);
+      padding: 28px;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+    .card-img-header img {
+      width: 130px;
+      height: 130px;
+      object-fit: contain;
+      filter: drop-shadow(0 6px 16px rgba(0,0,0,0.4));
+    }
+    .card-content { padding: 20px; }
+    .card-content .card-brand { margin-bottom: 4px; }
+    .card-content h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
+    .card-content .stars { margin-bottom: 8px; }
+    .card-content .card-desc { font-size: 0.82rem; margin-bottom: 14px; }
+    .card-content .tags { margin-bottom: 14px; }
+    .card-content .card-footer {
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+    }
+    .card-content .price-wrap .price { font-size: 1.2rem; }
+    .btn-amazon-sm {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--amazon);
+      color: #000;
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 9px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-amazon-sm:hover { background: var(--amazon-dark); transform: translateY(-1px); }
+
+    /* ─── SPECS BAR ─── */
+    .specs { margin: 12px 0; }
+    .spec-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+    .spec-label { font-size: 0.72rem; color: var(--muted); width: 70px; flex-shrink: 0; }
+    .spec-bar { flex: 1; background: rgba(255,255,255,0.07); border-radius: 100px; height: 5px; overflow: hidden; }
+    .spec-fill { height: 100%; border-radius: 100px; background: var(--green); }
+    .spec-fill.blue { background: #60a5fa; }
+    .spec-fill.orange { background: var(--amazon); }
+
+    /* ─── SECTION DIVIDER ─── */
+    .section-divider {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 0 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section-divider hr { flex: 1; border: none; border-top: 1px solid var(--border); }
+
+/* ─── FOOTER ─── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 24px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+    footer a { color: var(--green); text-decoration: none; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 768px) {
+      .featured-card { grid-template-columns: 1fr; }
+      .card-img-wrap { min-height: 120px; }
+      nav { display: none; }
+      .hero-stats { gap: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <div class="logo">Pádel<span>Pro</span>Guía</div>
+    <nav>
+      <a href="#top2026">Top 2026</a>
+      <a href="#calidad-precio">Calidad-Precio</a>
+      <a href="#control">Control</a>
+      <a href="#potencia">Potencia</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">✦ Guía actualizada 2026</div>
+  <h1>Las Mejores Palas de<br /><span>Pádel 2026</span></h1>
+  <p>Análisis exhaustivo de las palas que están dominando las pistas. Comparamos materiales, balance, potencia y control para que elijas la tuya.</p>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-num">18+</div><div class="stat-label">Palas analizadas</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">Categorías</div></div>
+    <div class="stat"><div class="stat-num">2026</div><div class="stat-label">Actualización</div></div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     SECCIÓN 1: MEJORES PALAS 2026
+══════════════════════════════════════ -->
+<section class="section" id="top2026">
+  <div class="section-header">
+    <div>
+      <div class="section-tag">★ Selección del año</div>
+      <h2 class="section-title">Mejores Palas de Pádel 2026</h2>
+      <p class="section-subtitle">Las palas que están marcando tendencia esta temporada</p>
+    </div>
+  </div>
+
+  <!-- #1 Bullpadel Vertex 04 -->
+  <div class="featured-card">
+    <div class="rank-badge">🥇 Nº1 Global</div>
+    <div class="card-img-wrap">
+      <img src="https://m.media-amazon.com/images/I/51yJfFoIAkL._AC_SX569_.jpg" alt="Bullpadel Vertex 04 2026" onerror="this.src='https://via.placeholder.com/160x160/1a1a1a/2dd4bf?text=Bullpadel+Vertex'" />
+    </div>
+    <div class="card-body">
+      <div class="card-brand">Bullpadel</div>
+      <h3>Vertex 04 2026</h3>
+      <div class="stars">
+        <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        <span class="star">★</span><span class="star">★</span>
+        <span class="rating-num">4.9 / 5 — La pala del año</span>
+      </div>
+      <div class="specs">
+        <div class="spec-row"><span class="spec-label">Potencia</span><div class="spec-bar"><div class="spec-fill" style="width:92%"></div></div></div>
+        <div class="spec-row"><span class="spec-label">Control</span><div class="spec-bar"><div class="spec-fill" style="width:78%"></div></div></div>
+        <div class="spec-row"><span class="spec-label">Salida bola</span><div class="spec-bar"><div class="spec-fill" style="width:90%"></div></div></div>
+      </div>
+      <p class="card-desc">La evolución definitiva de la saga Vertex. Núcleo AIRTROC mejorado con carbono 3K en toda la superficie, forma diamante y balance alto. Es la pala con la que Fernando Belasteguín sigue ganando torneos en 2026. Ideal para jugadores ofensivos de nivel avanzado.</p>
+      <div class="tags">
+        <span class="tag green">Carbono 3K</span>
+        <span class="tag blue">Nivel avanzado</span>
+        <span class="tag orange">Forma diamante</span>
+        <span class="tag">Balance alto</span>
+      </div>
+      <div class="card-footer">
+        <div class="price-wrap">
+          <div class="price">~239 €</div>
+          <div class="price-note">Precio orientativo en Amazon</div>
+        </div>
+        <a href="https://www.amazon.es/s?k=Bullpadel+Vertex+04+2026&tag=TUETIQUETA-21" target="_blank" rel="noopener sponsored" class="btn-amazon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.831 3.47 1.426 3.47 2.338 0 .906-.683 1.361-2.003 1.361-1.518 0-4.048-.573-6.09-1.662l-.89 5.582C6.19 23.26 9.18 24 12.165 24c2.667 0 4.744-.654 6.29-1.908 1.618-1.285 2.445-3.13 2.445-5.342-.002-4.098-2.499-5.793-6.924-7.6z"/></svg>
+          Ver en Amazon
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- #2 Babolat Technical Viper Air -->
+  <div class="featured-card" style="border-color: rgba(148,163,184,0.25);">
+    <div class="rank-badge silver">🥈 Nº2 Global</div>
+    <div class="card-img-wrap">
+      <img src="https://m.media-amazon.com/images/I/41e9K9nqQoL._AC_SX569_.jpg" alt="Babolat Technical Viper Air 2026" onerror="this.src='https://via.placeholder.com/160x160/1a1a1a/94a3b8?text=Babolat+Viper'" />
+    </div>
+    <div class="card-body">
+      <div class="card-brand">Babolat</div>
+      <h3>Technical Viper Air 2026</h3>
+      <div class="stars">
+        <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        <span class="star">★</span><span class="star" style="color:#555">★</span>
+        <span class="rating-num">4.7 / 5</span>
+      </div>
+      <div class="specs">
+        <div class="spec-row"><span class="spec-label">Potencia</span><div class="spec-bar"><div class="spec-fill" style="width:85%"></div></div></div>
+        <div class="spec-row"><span class="spec-label">Control</span><div class="spec-bar"><div class="spec-fill" style="width:84%"></div></div></div>
+        <div class="spec-row"><span class="spec-label">Salida bola</span><div class="spec-bar"><div class="spec-fill" style="width:82%"></div></div></div>
+      </div>
+      <p class="card-desc">Babolat ha vuelto con fuerza. La Viper Air 2026 presenta un núcleo EVA de alta densidad con fibra de carbono 12K en la cara frontal. El sistema Air distribuye el peso uniformemente ofreciendo un equilibrio excepcional entre potencia y control. Perfecta para jugadores mixtos.</p>
+      <div class="tags">
+        <span class="tag green">Carbono 12K</span>
+        <span class="tag blue">Perfil redondo-diamante</span>
+        <span class="tag">EVA alta densidad</span>
+      </div>
+      <div class="card-footer">
+        <div class="price-wrap">
+          <div class="price">~219 €</div>
+          <div class="price-note">Precio orientativo en Amazon</div>
+        </div>
+        <a href="https://www.amazon.es/s?k=Babolat+Technical+Viper+Air+2026&tag=TUETIQUETA-21" target="_blank" rel="noopener sponsored" class="btn-amazon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.831 3.47 1.426 3.47 2.338 0 .906-.683 1.361-2.003 1.361-1.518 0-4.048-.573-6.09-1.662l-.89 5.582C6.19 23.26 9.18 24 12.165 24c2.667 0 4.744-.654 6.29-1.908 1.618-1.285 2.445-3.13 2.445-5.342-.002-4.098-2.499-5.793-6.924-7.6z"/></svg>
+          Ver en Amazon
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- #3 NOX ML10 Pro Cup -->
+  <div class="featured-card" style="border-color: rgba(205,127,50,0.25);">
+    <div class="rank-badge bronze">🥉 Nº3 Global</div>
+    <div class="card-img-wrap">
+      <img src="https://m.media-amazon.com/images/I/51N-p0xMXgL._AC_SX569_.jpg" alt="NOX ML10 Pro Cup 2026" onerror="this.src='https://via.placeholder.com/160x160/1a1a1a/cd7f32?text=NOX+ML10'" />
+    </div>
+    <div class="card-body">
+      <div class="card-brand">NOX</div>
+      <h3>ML10 Pro Cup Rough 2026</h3>
+      <div class="stars">
+        <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        <span class="star">★</span><span class="star" style="color:#555">★</span>
+        <span class="rating-num">4.6 / 5</span>
+      </div>
+      <div class="specs">
+        <div class="spec-row"><span class="spec-label">Potencia</span><div class="spec-bar"><div class="spec-fill" style="width:80%"></div></div></div>
+        <div class="spec-row"><span class="spec-label">Control</span><div class="spec-bar"><div class="spec-fill" style="width:86%"></div></div></div>
+        <div class="spec-row"><span class="spec-label">Salida bola</span><div class="spec-bar"><div class="spec-fill" style="width:79%"></div></div></div>
+      </div>
+      <p class="card-desc">La pala de Miguel Lamperti sigue siendo una referencia absoluta. La versión 2026 Rough incorpora texturizado antideslizante que mejora el efecto y el control. Núcleo HR3 con balance medio-alto. Una pala completa para jugadores que quieren potencia sin sacrificar tacto.</p>
+      <div class="tags">
+        <span class="tag green">Carbono Rough</span>
+        <span class="tag blue">HR3 Core</span>
+        <span class="tag orange">Balance medio-alto</span>
+      </div>
+      <div class="card-footer">
+        <div class="price-wrap">
+          <div class="price">~199 €</div>
+          <div class="price-note">Precio orientativo en Amazon</div>
+        </div>
+        <a href="https://www.amazon.es/s?k=NOX+ML10+Pro+Cup+Rough+2026&tag=TUETIQUETA-21" target="_blank" rel="noopener sponsored" class="btn-amazon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.831 3.47 1.426 3.47 2.338 0 .906-.683 1.361-2.003 1.361-1.518 0-4.048-.573-6.09-1.662l-.89 5.582C6.19 23.26 9.18 24 12.165 24c2.667 0 4.744-.654 6.29-1.908 1.618-1.285 2.445-3.13 2.445-5.342-.002-4.098-2.499-5.793-6.924-7.6z"/></svg>
+          Ver en Amazon
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"><hr /></div>
+
+<!-- ══════════════════════════════════════
+     SECCIÓN 2: CALIDAD-PRECIO
+══════════════════════════════════════ -->
+<section class="section" id="calidad-precio">
+  <div class="section-header">
+    <div>
+      <div class="section-tag orange">💰 Mejor inversión</div>
+      <h2 class="section-title">Mejor Calidad-Precio 2026</h2>
+      <p class="section-subtitle">Alto rendimiento sin vaciar el bolsillo</p>
+    </div>
+  </div>
+
+  <div class="cards-grid">
+
+    <!-- Head Delta Pro -->
+    <div class="card">
+      <div class="card-img-header">
+        <div class="rank-badge value" style="top:12px;left:12px;">Mejor CP</div>
+        <img src="https://m.media-amazon.com/images/I/41ORaECIouL._AC_SX569_.jpg" alt="Head Delta Pro 2026" onerror="this.src='https://via.placeholder.com/130x130/202020/ff9900?text=Head+Delta'" />
+      </div>
+      <div class="card-content">
+        <div class="card-brand">Head</div>
+        <h3>Delta Pro 2026</h3>
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          <span class="star">★</span><span class="star">★</span>
+          <span class="rating-num">4.8</span>
+        </div>
+        <div class="specs">
+          <div class="spec-row"><span class="spec-label">Potencia</span><div class="spec-bar"><div class="spec-fill" style="width:76%"></div></div></div>
+          <div class="spec-row"><span class="spec-label">Control</span><div class="spec-bar"><div class="spec-fill" style="width:82%"></div></div></div>
+        </div>
+        <p class="card-desc">La Head Delta Pro ofrece una superficie de fibra de vidrio con refuerzo de carbono y un precio imbatible para el rendimiento que da. Perfil diamante asequible para el jugador que quiere dar el salto sin gastar una fortuna.</p>
+        <div class="tags">
+          <span class="tag green">Fibra + Carbono</span>
+          <span class="tag orange">Relación CP ★★★★★</span>
+        </div>
+        <div class="card-footer">
+          <div class="price-wrap">
+            <div class="price">~89 €</div>
+          </div>
+          <a href="https://www.amazon.es/s?k=Head+Delta+Pro+padel+2026&tag=TUETIQUETA-21" target="_blank" rel="noopener sponsored" class="btn-amazon-sm">Ver en Amazon</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wilson Bela Junior / Team -->
+    <div class="card">
+      <div class="card-img-header">
+        <img src="https://m.media-amazon.com/images/I/41n6z-N0c3L._AC_SX569_.jpg" alt="Wilson Team 2026" onerror="this.src='https://via.placeholder.com/130x130/202020/ff9900?text=Wilson+Team'" />
+      </div>
+      <div class="card-content">
+        <div class="card-brand">Wilson</div>
+        <h3>Bela Team 2026</h3>
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          <span class="star">★</span><span class="star" style="color:#555">★</span>
+          <span class="rating-num">4.5</span>
+        </div>
+        <div class="specs">
+          <div class="spec-row"><span class="spec-label">Potencia</span><div class="spec-bar"><div class="spec-fill" style="width:70%"></div></div></div>
+          <div class="spec-row"><span class="spec-label">Control</span><div class="spec-bar"><div class="spec-fill" style="width:78%"></div></div></div>
+        </div>
+        <p class="card-desc">La línea Bela de Wilson en su versión Team es perfecta para el jugador intermedio. Cara de fibra de vidrio, núcleo EVA suave y un balance que favorece el juego desde el fondo. Muy versátil y duradera.</p>
+        <div class="tags">
+          <span class="tag green">Fibra de vidrio</span>
+          <span class="tag">Balance medio</span>
+        </div>
+        <div class="card-footer">
+          <div class="price-wrap">
+            <div class="price">~99 €</div>
+          </div>
+          <a href="https://www.amazon.es/s?k=Wilson+Bela+Team+padel+2026&tag=TUETIQUETA-21" target="_blank" rel="noopener sponsored" class="btn-amazon-sm">Ver en Amazon</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- StarVie Triton -->
+    <div class="card">
+      <div class="card-img-header">
+        <img src="https://m.media-amazon.com/images/I/41z+I8J4bBL._AC_SX569_.jpg" alt="StarVie Triton 2026" onerror="this.src='https://via.placeholder.com/130x130/202020/ff9900?text=StarVie+Triton'" />
+      </div>
+      <div class="card-content">
+        <div class="card-brand">StarVie</div>
+        <h3>Triton Pro 2026</h3>
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          <span class="star">★</span><span class="star">★</span>
+          <span class="rating-num">4.7</span>
+        </div>
+        <div class="specs">
+          <div class="spec-row"><span class="spec-label">Potencia</span><div class="spec-bar"><div class="spec-fill" style="width:74%"></div></div></div>
+          <div class="spec-row"><span class="spec-label">Control</span><div class="spec-bar"><div class="spec-fill" style="width:88%"></div></div></div>
+        </div>
+        <p class="card-desc">StarVie lleva años siendo el secreto mejor guardado del pádel. La Triton Pro 2026 es una pala polivalente con núcleo de EVA suave y cara de carbono que ofrece un tacto excepcional a un precio ajustado. Muy recomendada para jugadores de nivel medio-alto.</p>
+        <div class="tags">
+          <span class="tag green">Carbono cara</span>
+          <span class="tag blue">EVA suave</span>
+          <span class="tag orange">CP excelente</span>
+        </div>
+        <div class="card-footer">
+          <div class="price-wrap">
+            <div class="price">~129 €</div>
+          </div>
+          <a href="https://www.amazon.es/s?k=StarVie+Triton+Pro+padel+2026&tag=TUETIQUETA-21" target="_blank" rel="noopener sponsored" class="btn-amazon-sm">Ver en Amazon</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dunlop Blitz Elite -->
+    <div class="card">
+      <div class="card-img-header">
+        <img src="https://m.media-amazon.com/images/I/41S7VFj7xCL._AC_SX569_.jpg" alt="Dunlop Blitz Elite 2026" onerror="this.src='https://via.placeholder.com/130x130/202020/ff9900?text=Dunlop+Blitz'" />
+      </div>
+      <div class="card-content">
+        <div class="card-brand">Dunlop</div>
+        <h3>Blitz Elite 2026</h3>
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          <span class="star">★</span><span class="star" style="color:#555">★</span>
+          <span class="rating-num">4.4</span>
+        </div>
+        <div class="specs">
+          <div class="spec-row"><span class="spec-label">Potencia</span><div class="spec-bar"><div class="spec-fill" style="width:68%"></div></div></div>
+          <div class="spec-row"><span class="spec-label">Control</span><div class="spec-bar"><div class="spec-fill" style="width:80%"></div></div></div>
+        </div>
+        <p class="card-desc">Dunlop regresa al mercado con la Blitz Elite, una pala de perfil redondo con excelente área de golpeo y gran tolerancia al error. Ideal para jugadores que están progresando y buscan consistencia por encima de todo sin gastar demasiado.</p>
+        <div class="tags">
+          <span class="tag green">Perfil redondo</span>
+          <span class="tag">Fibra de vidrio</span>
+        </div>
+        <div class="card-footer">
+          <div class="price-wrap">
+            <div class="price">~79 €</div>
+          </div>
+          <a href="https://www.amazon.es/s?k=Dunlop+Blitz+Elite+padel+2026&tag=TUETIQUETA-21" target="_blank" rel="noopener sponsored" class="btn-amazon-sm">Ver en Amazon</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="section-divider"><hr /></div>
+
+<!-- ══════════════════════════════════════
+     SECCIÓN 3: PALAS DE CONTROL
+══════════════════════════════════════ -->
+<section class="section" id="control">
+  <div class="section-header">
+    <div>
+      <div class="section-tag blue">🎯 Precisión total</div>
+      <h2 class="section-title">Mejores Palas de Control 2026</h2>
+      <p class="section-subtitle">Máxima precisión y tacto para dominar el punto</p>
+    </div>
+  </div>
+
+  <!-- Featured: Adidas Metalbone CTRL -->
+  <div class="featured-card" style="border-color: rgba(96,165,250,0.3); margin-bottom: 28px;">
+    <div class="rank-badge" style="background:#60a5fa; color:#000;">🎯 Top Control</div>
+    <div class="card-img-wrap">
+      <img src="https://m.media-amazon.com/images/I/41H33vVFKCL._AC_SX569_.jpg" alt="Adidas Metalbone CTRL 2026" onerror="this.src='https://via.placeholder.com/160x160/1a1a1a/60a5fa?text=Adidas+CTRL'" />
+    </div>
+    <div class="card-body">
+      <div class="card-brand" style="color:#60a5fa;">Adidas</div>
+      <h3>Metalbone CTRL 2026</h3>
+      <div class="stars">
+        <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        <span class="star">★</span><span class="star">★</span>
+        <span class="rating-num">4.9 / 5 — Mejor pala de control</span>
+      </div>
+      <div class="specs">
+        <div class="spec-row"><span class="spec-label">Control</span><div class="spec-bar"><div class="spec-fill blue" style="width:97%"></div></div></div>
+        <div class="spec-row"><span class="spec-label">Potencia</span><div class="spec-bar"><div class="spec-fill blue" style="width:72%"></div></div></div>
+        <div class="spec-row"><span class="spec-label">Tacto</span><div class="spec-bar"><div class="spec-fill blue" style="width:95%"></div></div></div>
+      </div>
+      <p class="card-desc">La Adidas Metalbone CTRL es la referencia mundial en palas de control. Núcleo FOAM central de última generación, cara de fibra de carbono con texturas especiales que aportan un tacto excepcional. Forma redonda con balance bajo para mayor maniobrabilidad. La pala con la que los mejores jugadores técnicos del circuito Premier Padel dominan el intercambio.</p>
+      <div class="tags">
+        <span class="tag" style="border-color:rgba(96,165,250,0.3);color:#60a5fa;background:rgba(96,165,250,0.07);">FOAM Core</span>
+        <span class="tag" style="border-color:rgba(96,165,250,0.3);color:#60a5fa;background:rgba(96,165,250,0.07);">Forma redonda</span>
+        <span class="tag green">Balance bajo</span>
+        <span class="tag">Carbono texturizado</span>
+      </div>
+      <div class="card-footer">
+        <div class="price-wrap">
+          <div class="price">~229 €</div>
+          <div class="price-note">Precio orientativo en Amazon</div>
+        </div>
+        <a href="https://www.amazon.es/s?k=Adidas+Metalbone+CTRL+padel+2026&tag=TUETIQUETA-21" target="_blank" rel="noopener sponsored" class="btn-amazon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.831 3.47 1.426 3.47 2.338 0 .906-.683 1.361-2.003 1.361-1.518 0-4.048-.573-6.09-1.662l-.89 5.582C6.19 23.26 9.18 24 12.165 24c2.667 0 4.744-.654 6.29-1.908 1.618-1.285 2.445-3.13 2.445-5.342-.002-4.098-2.499-5.793-6.924-7.6z"/></svg>
+          Ver en Amazon
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="cards-grid">
+
+    <!-- NOX AT10 Luxury -->
+    <div class="card">
+      <div class="card-img-header">
+        <img src="https://m.media-amazon.com/images/I/41MhVlBFsZL._AC_SX569_.jpg" alt="NOX AT10 Luxury Control" onerror="this.src='https://via.placeholder.com/130x130/202020/60a5fa?text=NOX+AT10'" />
+      </div>
+      <div class="card-content">
+        <div class="card-brand" style="color:#60a5fa;">NOX</div>
+        <h3>AT10 Luxury Control 2026</h3>
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          <span class="star">★</span><span class="star">★</span>
+          <span class="rating-num">4.7</span>
+        </div>
+        <div class="specs">
+          <div class="spec-row"><span class="spec-label">Control</span><div class="spec-bar"><div class="spec-fill blue" style="width:93%"></div></div></div>
+          <div class="spec-row"><span class="spec-label">Potencia</span><div class="spec-bar"><div class="spec-fill blue" style="width:68%"></div></div></div>
+        </div>
+        <p class="card-desc">La pala de Agustín Tapia en su versión de control puro. Forma redonda con núcleo HR3 suave y cara de carbono liso. Excelente para jugadores de defensa y control que buscan situar cada pelota con precisión milimétrica.</p>
+        <div class="tags">
+          <span class="tag" style="border-color:rgba(96,165,250,0.3);color:#60a5fa;background:rgba(96,165,250,0.07);">HR3 Suave</span>
+          <span class="tag green">Forma redonda</span>
+        </div>
+        <div class="card-footer">
+          <div class="price-wrap"><div class="price">~209 €</div></div>
+          <a href="https://www.amazon.es/s?k=NOX+AT10+Luxury+Control+padel+2026&tag=TUETIQUETA-21" target="_blank" rel="noopener sponsored" class="btn-amazon-sm">Ver en Amazon</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Head Radical Pro -->
+    <div class="card">
+      <div class="card-img-header">
+        <img src="https://m.media-amazon.com/images/I/414LDLBFVUL._AC_SX569_.jpg" alt="Head Radical Pro Control" onerror="this.src='https://via.placeholder.com/130x130/202020/60a5fa?text=Head+Radical'" />
+      </div>
+      <div class="card-content">
+        <div class="card-brand" style="color:#60a5fa;">Head</div>
+        <h3>Radical Pro 2026</h3>
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          <span class="star">★</span><span class="star" style="color:#555">★</span>
+          <span class="rating-num">4.5</span>
+        </div>
+        <div class="specs">
+          <div class="spec-row"><span class="spec-label">Control</span><div class="spec-bar"><div class="spec-fill blue" style="width:89%"></div></div></div>
+          <div class="spec-row"><span class="spec-label">Potencia</span><div class="spec-bar"><div class="spec-fill blue" style="width:65%"></div></div></div>
+        </div>
+        <p class="card-desc">La serie Radical siempre ha sido sinónimo de control en Head. La versión 2026 Pro mantiene el alma de la saga con mejoras en la absorción de vibración y mayor área de golpeo efectivo. Excelente para el jugador de izquierda técnico.</p>
+        <div class="tags">
+          <span class="tag" style="border-color:rgba(96,165,250,0.3);color:#60a5fa;background:rgba(96,165,250,0.07);">Antivibración</span>
+          <span class="tag green">Gran sweetspot</span>
+        </div>
+        <div class="card-footer">
+          <div class="price-wrap"><div class="price">~189 €</div></div>
+          <a href="https://www.amazon.es/s?k=Head+Radical+Pro+padel+2026&tag=TUETIQUETA-21" target="_blank" rel="noopener sponsored" class="btn-amazon-sm">Ver en Amazon</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bullpadel Hack 03 CTRL -->
+    <div class="card">
+      <div class="card-img-header">
+        <img src="https://m.media-amazon.com/images/I/41gV5U6PZWL._AC_SX569_.jpg" alt="Bullpadel Hack 03 Control" onerror="this.src='https://via.placeholder.com/130x130/202020/60a5fa?text=Bullpadel+Hack'" />
+      </div>
+      <div class="card-content">
+        <div class="card-brand" style="color:#60a5fa;">Bullpadel</div>
+        <h3>Hack 03 Control 2026</h3>
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          <span class="star">★</span><span class="star">★</span>
+          <span class="rating-num">4.6</span>
+        </div>
+        <div class="specs">
+          <div class="spec-row"><span class="spec-label">Control</span><div class="spec-bar"><div class="spec-fill blue" style="width:90%"></div></div></div>
+          <div class="spec-row"><span class="spec-label">Potencia</span><div class="spec-bar"><div class="spec-fill blue" style="width:70%"></div></div></div>
+        </div>
+        <p class="card-desc">La Hack 03 Control de Bullpadel es una de las grandes sorpresas del 2026. Núcleo AIRTROC suave con cara de carbono 3K que proporciona un tacto de lujo. Para el jugador que quiere la tecnología Bullpadel en versión controladora.</p>
+        <div class="tags">
+          <span class="tag" style="border-color:rgba(96,165,250,0.3);color:#60a5fa;background:rgba(96,165,250,0.07);">AIRTROC Suave</span>
+          <span class="tag orange">Forma redonda</span>
+        </div>
+        <div class="card-footer">
+          <div class="price-wrap"><div class="price">~179 €</div></div>
+          <a href="https://www.amazon.es/s?k=Bullpadel+Hack+Control+padel+2026&tag=TUETIQUETA-21" target="_blank" rel="noopener sponsored" class="btn-amazon-sm">Ver en Amazon</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="section-divider"><hr /></div>
+
+<!-- ══════════════════════════════════════
+     SECCIÓN 4: PALAS DE POTENCIA
+══════════════════════════════════════ -->
+<section class="section" id="potencia">
+  <div class="section-header">
+    <div>
+      <div class="section-tag purple">⚡ Máxima potencia</div>
+      <h2 class="section-title">Mejores Palas de Potencia 2026</h2>
+      <p class="section-subtitle">Para jugadores que quieren golpear la bola con toda la fuerza</p>
+    </div>
+  </div>
+
+  <!-- Featured: Adidas Metalbone -->
+  <div class="featured-card" style="border-color: rgba(192,132,252,0.3); margin-bottom: 28px;">
+    <div class="rank-badge" style="background:#c084fc; color:#000;">⚡ Top Potencia</div>
+    <div class="card-img-wrap">
+      <img src="https://m.media-amazon.com/images/I/31H27oNVJ3L._AC_SX569_.jpg" alt="Adidas Metalbone 2026" onerror="this.src='https://via.placeholder.com/160x160/1a1a1a/c084fc?text=Adidas+Metal'" />
+    </div>
+    <div class="card-body">
+      <div class="card-brand" style="color:#c084fc;">Adidas</div>
+      <h3>Metalbone 3.3 2026</h3>
+      <div class="stars">
+        <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        <span class="star">★</span><span class="star">★</span>
+        <span class="rating-num">4.9 / 5 — Mejor pala de potencia</span>
+      </div>
+      <div class="specs">
+        <div class="spec-row"><span class="spec-label">Potencia</span><div class="spec-bar"><div class="spec-fill" style="width:98%;background:#c084fc;"></div></div></div>
+        <div class="spec-row"><span class="spec-label">Control</span><div class="spec-bar"><div class="spec-fill" style="width:68%;background:#c084fc;"></div></div></div>
+        <div class="spec-row"><span class="spec-label">Salida bola</span><div class="spec-bar"><div class="spec-fill" style="width:96%;background:#c084fc;"></div></div></div>
+      </div>
+      <p class="card-desc">La Metalbone es sinónimo de potencia brutal. La versión 3.3 de 2026 lleva al límite la tecnología METALBONE con una cara completamente de carbono 12K y el núcleo EVA de alta densidad más explosivo jamás fabricado por Adidas. Forma diamante con balance ultra-alto. La eligen los mejores jugadores de ataque del circuito mundial porque en la pista nadie puede devolver su smash.</p>
+      <div class="tags">
+        <span class="tag" style="border-color:rgba(192,132,252,0.3);color:#c084fc;background:rgba(192,132,252,0.07);">Carbono 12K</span>
+        <span class="tag" style="border-color:rgba(192,132,252,0.3);color:#c084fc;background:rgba(192,132,252,0.07);">EVA alta densidad</span>
+        <span class="tag green">Forma diamante</span>
+        <span class="tag orange">Balance muy alto</span>
+      </div>
+      <div class="card-footer">
+        <div class="price-wrap">
+          <div class="price">~249 €</div>
+          <div class="price-note">Precio orientativo en Amazon</div>
+        </div>
+        <a href="https://www.amazon.es/s?k=Adidas+Metalbone+3.3+padel+2026&tag=TUETIQUETA-21" target="_blank" rel="noopener sponsored" class="btn-amazon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.831 3.47 1.426 3.47 2.338 0 .906-.683 1.361-2.003 1.361-1.518 0-4.048-.573-6.09-1.662l-.89 5.582C6.19 23.26 9.18 24 12.165 24c2.667 0 4.744-.654 6.29-1.908 1.618-1.285 2.445-3.13 2.445-5.342-.002-4.098-2.499-5.793-6.924-7.6z"/></svg>
+          Ver en Amazon
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="cards-grid">
+
+    <!-- Wilson Bela Pro -->
+    <div class="card">
+      <div class="card-img-header">
+        <img src="https://m.media-amazon.com/images/I/41xQg1BFHIL._AC_SX569_.jpg" alt="Wilson Bela Pro 2026" onerror="this.src='https://via.placeholder.com/130x130/202020/c084fc?text=Wilson+Bela'" />
+      </div>
+      <div class="card-content">
+        <div class="card-brand" style="color:#c084fc;">Wilson</div>
+        <h3>Bela Pro 2026</h3>
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          <span class="star">★</span><span class="star">★</span>
+          <span class="rating-num">4.8</span>
+        </div>
+        <div class="specs">
+          <div class="spec-row"><span class="spec-label">Potencia</span><div class="spec-bar"><div class="spec-fill" style="width:93%;background:#c084fc;"></div></div></div>
+          <div class="spec-row"><span class="spec-label">Control</span><div class="spec-bar"><div class="spec-fill" style="width:72%;background:#c084fc;"></div></div></div>
+        </div>
+        <p class="card-desc">La pala de Fernando Belasteguín en su versión Wilson. Cara de carbono 18K con núcleo EVA de alta densidad. Balance muy alto y forma diamante para que cada golpe tenga la máxima salida posible. Excelente para el jugador de derecha agresivo.</p>
+        <div class="tags">
+          <span class="tag" style="border-color:rgba(192,132,252,0.3);color:#c084fc;background:rgba(192,132,252,0.07);">Carbono 18K</span>
+          <span class="tag green">Diamante</span>
+        </div>
+        <div class="card-footer">
+          <div class="price-wrap"><div class="price">~239 €</div></div>
+          <a href="https://www.amazon.es/s?k=Wilson+Bela+Pro+padel+2026&tag=TUETIQUETA-21" target="_blank" rel="noopener sponsored" class="btn-amazon-sm">Ver en Amazon</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bullpadel Vertex 04 Power -->
+    <div class="card">
+      <div class="card-img-header">
+        <img src="https://m.media-amazon.com/images/I/51yJfFoIAkL._AC_SX569_.jpg" alt="Bullpadel Vertex Power 2026" onerror="this.src='https://via.placeholder.com/130x130/202020/c084fc?text=BP+Vertex'" />
+      </div>
+      <div class="card-content">
+        <div class="card-brand" style="color:#c084fc;">Bullpadel</div>
+        <h3>Vertex 04 Hard 2026</h3>
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          <span class="star">★</span><span class="star">★</span>
+          <span class="rating-num">4.7</span>
+        </div>
+        <div class="specs">
+          <div class="spec-row"><span class="spec-label">Potencia</span><div class="spec-bar"><div class="spec-fill" style="width:94%;background:#c084fc;"></div></div></div>
+          <div class="spec-row"><span class="spec-label">Control</span><div class="spec-bar"><div class="spec-fill" style="width:66%;background:#c084fc;"></div></div></div>
+        </div>
+        <p class="card-desc">La versión Hard del Vertex 04 sube un escalón en agresividad. El núcleo AIRTROC en su densidad más alta ofrece una respuesta explosiva sin igual. Cara de carbono 3K rugoso para mayor efecto en los smashes. La herramienta perfecta para el jugador que busca el punto directo.</p>
+        <div class="tags">
+          <span class="tag" style="border-color:rgba(192,132,252,0.3);color:#c084fc;background:rgba(192,132,252,0.07);">AIRTROC Hard</span>
+          <span class="tag orange">Carbono 3K Rough</span>
+        </div>
+        <div class="card-footer">
+          <div class="price-wrap"><div class="price">~229 €</div></div>
+          <a href="https://www.amazon.es/s?k=Bullpadel+Vertex+Hard+padel+2026&tag=TUETIQUETA-21" target="_blank" rel="noopener sponsored" class="btn-amazon-sm">Ver en Amazon</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- NOX X-ONE Power -->
+    <div class="card">
+      <div class="card-img-header">
+        <img src="https://m.media-amazon.com/images/I/41QWqbHfDmL._AC_SX569_.jpg" alt="NOX X-One Power 2026" onerror="this.src='https://via.placeholder.com/130x130/202020/c084fc?text=NOX+X-One'" />
+      </div>
+      <div class="card-content">
+        <div class="card-brand" style="color:#c084fc;">NOX</div>
+        <h3>X-One Power 2026</h3>
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          <span class="star">★</span><span class="star" style="color:#555">★</span>
+          <span class="rating-num">4.5</span>
+        </div>
+        <div class="specs">
+          <div class="spec-row"><span class="spec-label">Potencia</span><div class="spec-bar"><div class="spec-fill" style="width:88%;background:#c084fc;"></div></div></div>
+          <div class="spec-row"><span class="spec-label">Control</span><div class="spec-bar"><div class="spec-fill" style="width:71%;background:#c084fc;"></div></div></div>
+        </div>
+        <p class="card-desc">NOX X-One Power es la opción de potencia de la marca española para 2026. Núcleo HR3 en su versión más dura con cara de carbono 18K. Para jugadores avanzados que priorizan la velocidad de salida de bola y los golpes ganadores desde todas las posiciones de pista.</p>
+        <div class="tags">
+          <span class="tag" style="border-color:rgba(192,132,252,0.3);color:#c084fc;background:rgba(192,132,252,0.07);">HR3 Hard</span>
+          <span class="tag green">Carbono 18K</span>
+        </div>
+        <div class="card-footer">
+          <div class="price-wrap"><div class="price">~199 €</div></div>
+          <a href="https://www.amazon.es/s?k=NOX+X-One+Power+padel+2026&tag=TUETIQUETA-21" target="_blank" rel="noopener sponsored" class="btn-amazon-sm">Ver en Amazon</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p style="margin-bottom:8px;">© 2026 PádelProGuía — Guía independiente de palas de pádel</p>
+  <p>Como asociado de Amazon, obtenemos ingresos por las compras que cumplen los requisitos. Los precios son orientativos y pueden variar. Reemplaza <strong>TUETIQUETA-21</strong> con tu propio tag de Amazon Associates.</p>
+</footer>
+
+</body>
+</html>
